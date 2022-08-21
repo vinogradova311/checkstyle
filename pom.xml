@@ -24,7 +24,15 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.9.1></version>
+            </plugin>
+        </plugins>
+    </reporting>
     <build>
         <plugins>
             <plugin>
@@ -36,17 +44,6 @@
                 </configuration>
             </plugin>
 
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-checkstyle-plugin</artifactId>
-                        <version><![CDATA[2.9.1]]></version>
-                    </plugin>
-
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-jxr-plugin</artifactId>
-                        <version>2.3</version>
-                    </plugin>
 
             <plugin>
                 <groupId>org.jacoco</groupId>
